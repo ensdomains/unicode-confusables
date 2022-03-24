@@ -1,5 +1,6 @@
 # unicode-confusables
-Utility for finding confusing unicode, sourced from [unicode UTS39](http://www.unicode.org/reports/tr39/)'s [confusables.txt](https://www.unicode.org/Public/security/10.0.0/confusables.txt). [Compound emojis](https://unicode.org/reports/tr51/#ZWJ_Display) are supported.
+Utility for finding confusing unicode, sourced from [unicode UTS39](http://www.unicode.org/reports/tr39/)'s [confusables.txt](https://www.unicode.org/Public/security/10.0.0/confusables.txt).  
+[Compound emojis](https://unicode.org/reports/tr51/#ZWJ_Display) are supported.
 
 
 ### Installation
