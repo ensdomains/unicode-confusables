@@ -1,4 +1,5 @@
 const https = require('https');
+const readline = require('readline');
 const fs = require('fs')
 
 function extractCodePoint (point) {
@@ -10,8 +11,8 @@ function extract(entry) {
 }
 
 function logProgress (entries) {
-  process.stdout.clearLine()
-  process.stdout.cursorTo(0)
+  readline.clearLine(process.stdout)
+  readline.cursorTo(process.stdout, 0)
   process.stdout.write(`Processing ${entries} entries...`)
 }
 
