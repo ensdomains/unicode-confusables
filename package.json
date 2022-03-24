@@ -15,5 +15,8 @@
   },
   "volta": {
     "node": "16.14.2"
+  },
+  "dependencies": {
+    "emoji-regex": "^10.0.1"
   }
 }
