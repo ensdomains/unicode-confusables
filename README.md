@@ -1,5 +1,5 @@
 # unicode-confusables
-Utility for finding confusing unicode, sourced from [unicode UTS39](http://www.unicode.org/reports/tr39/)'s [confusables.txt](https://www.unicode.org/Public/security/10.0.0/confusables.txt).
+Utility for finding confusing unicode, sourced from [unicode UTS39](http://www.unicode.org/reports/tr39/)'s [confusables.txt](https://www.unicode.org/Public/security/10.0.0/confusables.txt). [Compound emojis](https://unicode.org/reports/tr51/#ZWJ_Display) are supported.
 
 
 ### Installation
@@ -18,6 +18,10 @@ const { isConfusing, confusables, rectifyConfusion } = require('unicode-confusab
 > isConfusing('fоо')
 true
 > isConfusing('foo')
+false
+
+// check if a compound emoji is confusing
+> isConfusing('🧛🏾‍♂')
 false
 
 // get the confusing parts of the string and their similarities
@@ -40,8 +44,7 @@ true
   { point: 'v' },
   { point: 'i' },
   { point: 't' },
-  { point: 'a' },
-  { point: '', similarTo: '' },
+  { point: 'a‍', similarTo: 'a' }, // zero-width unicode hidden in point (segment)
   { point: 'l' },
   { point: 'i' },
   { point: 'k' }
