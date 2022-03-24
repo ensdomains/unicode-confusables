@@ -11,6 +11,9 @@
     "build": "node scripts/update.js"
   },
   "devDependencies": {
-    "mocha": "^8.1.1"
+    "mocha": "^9.2.2"
+  },
+  "volta": {
+    "node": "16.14.2"
   }
 }

@@ -15,7 +15,7 @@ function logProgress (entries) {
   process.stdout.write(`Processing ${entries} entries...`)
 }
 
-https.get('https://unicode.org/Public/security/10.0.0/confusables.txt', (resp) => {
+https.get('https://unicode.org/Public/security/latest/confusables.txt', (resp) => {
   let extra = ''
   let entries = 0
   let map = {}
