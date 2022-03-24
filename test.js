@@ -6,11 +6,20 @@ const CONFUSING = {
     { point: 'v' },
     { point: 'i' },
     { point: 't' },
-    { point: 'a' },
-    { point: '‍', similarTo: '' },
+    { point: 'a‍', similarTo: 'a' },
     { point: 'l' },
     { point: 'i' },
     { point: 'k' }
+  ],
+  '⌐◨‐◨.eth': [
+    { point: '⌐' },
+    { point: '◨' },
+    { point: '‐', similarTo: '-' },
+    { point: '◨' },
+    { point: '.' },
+    { point: 'e' },
+    { point: 't' },
+    { point: 'h' }
   ],
   'ǉeto': [
     { point: 'ǉ', similarTo: 'lj' },
@@ -86,7 +95,10 @@ const CONFUSING = {
 const NOT_CONFUSING = [
   'vitalik',
   '👻', // ghost emoji
-  '日本刀'
+  '日本刀',
+  '🧛🏾‍♂',
+  '𓃵𓃵𓃵.eth',
+  '🧛🏾‍♂🧛🏾‍♂🧛🏾‍♂.eth'
 ]
 
 describe('isConfusing', () => {
