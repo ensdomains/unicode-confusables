@@ -1,8 +1,8 @@
 {
-  "name": "unicode-confusables",
-  "version": "0.2.0",
+  "name": "@ensdomains/unicode-confusables",
+  "version": "0.1.0",
   "description": "Utility for finding confusing unicode in strings",
-  "author": "Ty <lastcanal@gmail.com>",
+  "author": "Muhammed Tanrikulu <muhammed@ens.domains>",
   "main": "index.js",
   "types": "index.d.ts",
   "license": "MIT",
